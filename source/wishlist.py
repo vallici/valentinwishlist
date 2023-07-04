@@ -1,6 +1,10 @@
 import openpyxl
 import requests
+import sys
 from bs4 import BeautifulSoup
+
+
+
 
 def generate_wishlist_html_from_excel(file_path):
     workbook = openpyxl.load_workbook(file_path)
@@ -88,7 +92,8 @@ def generate_wishlist_html_from_excel(file_path):
         if item['name']:
             item_name = item['name']
         else:
-            item_name = get_page_title(item['link'])
+#           item_name = get_page_title(item['link'])
+            item_name = item['link']
         
         html += """
             <div class="wishlist-item">
@@ -112,14 +117,14 @@ def generate_wishlist_html_from_excel(file_path):
     return html
 
 
-def get_page_title(url):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    page_title = soup.title.string.strip()
-    return page_title
+#def get_page_title(url):
+#    response = requests.get(url)
+#    soup = BeautifulSoup(response.text, 'html.parser')
+#    page_title = soup.title.string.strip()
+#    return page_title
 
 
 # Example usage
-file_path = 'wishlist.xlsx'
+file_path = sys.argv[1]
 wishlist_html = generate_wishlist_html_from_excel(file_path)
 print(wishlist_html)
