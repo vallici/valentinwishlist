@@ -1,185 +1,407 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
-        <title>Valentin's Wishlist</title>
+        <title>Wishlist Valentin</title>
         <style>
             body {
+            
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
+				font-weight: bold
+                
             }
             
             h1 {
+            
                 text-align: center;
+                
             }
             
             .wishlist-container {
-                display:block;
                 
-                margin: 0 auto;
+				display: table;
+				margin: 0 auto;
                 max-width: 70em;
-                border: 1px solid #ccc;
-                padding: 1em;
                 width: 100%;
                 height: auto;
                 position: relative;
                 overflow: hidden;
+                border-spacing: 0 1em;
+
                 
             }
             
             .wishlist-item {
-                margin-bottom: 1em;
-                display: flex;
-                align-items: center;
+            
+				display: table-row;
                 background-color: #f9f9f9;
+                
             }
+			
+
             
             .wishlist-item:nth-child(even) {
+            
                 background-color: #e9e9e9;
+                
             }
             
-            .wishlist-item img {
-                display: block;
-                max-width: 15em;
+			.wishlist-image {
+            
+                display:table-cell;
+				width: 15em;
+                height: 10em;
+				min-witdh: 15em;
+				vertical-align: middle;
+				position: relative;
+                align-items: center;
+                text-align: center;
+                
+			}
+			
+            .wishlist-image img {
+            
+				display:block;
+				max-width: 15em;
                 max-height: 10em;
-                margin-right: 1em;
+                margin-right: auto;
+				margin-left: auto;
                 width: auto;
                 height: auto;
-
+				vertical-align:middle;
+                color: #F527A3;
 
             }
-            
+			
+           .wishlist-name {
+           
+				display:table-cell;
+				text-decoration: none;
+                color: #000;
+				min-width: 10em;
+                max-width: 40em;
+				align-items:center;
+				margin-right: 2em;
+				vertical-align:middle;
+				margin-left: 2em;
+				padding-left: 2em;
+
+            }
             .wishlist-item a {
+            
                 text-decoration: none;
                 color: #000;
-                font-weight: bold;
-                width: 40em;
+                
+             }
+            
+            .wishlist-price  {
+            
+				display:table-cell;
+				vertical-align:middle;
+				align-items:center;
+				text-align: center-right;
+				padding-left: 1em;
+				margin-left: 1em;
+                width: auto;
+
             }
             
-            .wishlist-item .price {
-                font-weight: bold;
-                text-align: right;
-                padding-left: 1em;
-                padding-right: 1em;
-                width: 8em;
-            }
         </style>
     </head>
     <body>
-        <h1>Valentin's Wishlist</h1>
+        <h1>Wishlist Valentin</h1>
         
         <div class="wishlist-container">
-    
-            <div class="wishlist-item">
-                <img src="https://www.loveramics.com/cdn/shop/files/C099-19A_C099-78A_6b04fe54-a378-4be5-a3fe-968b39d5537e.png?v=1727169104&width=700" alt="wishlist-item">
-                <a href="https://www.loveramics.com/collections/brewers-glass-jug-servers/products/brewers-glass-jug" target="_blank">500ml Tall Glass Jug with Lid</a>
-                <div class="price">21.95 EUR</div>
-            </div>
         
             <div class="wishlist-item">
-                <img src="https://www.digitec.ch/im/productimages/2/6/7/4/8/9/8/0/2/6/7/8/8/4/3/0/0/2/7/5ca5b75d-0beb-4a12-a783-031962cefaec_cropped.jpg?impolicy=ProductTileImage&resizeWidth=648&resizeHeight=486&cropWidth=648&cropHeight=486&resizeType=downsize&quality=high" alt="wishlist-item">
-                <a href="https://www.digitec.ch/en/s1/product/8bitdo-arcade-stick-switch-lite-switch-pc-game-controllers-13747515" target="_blank">8bitdo Arcade Stick</a>
-                <div class="price">78.60 CHF</div>
+                <div class="wishlist-image">
+                <img src="https://www.loveramics.com/cdn/shop/files/C099-19A_C099-78A_6b04fe54-a378-4be5-a3fe-968b39d5537e.png?v=1727169104&width=700" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.loveramics.com/collections/brewers-glass-jug-servers/products/brewers-glass-jug" target="_blank">
+                
+                    500ml Tall Glass Jug with Lid
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                21.95 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://superdeluxeedition.com/wp-content/uploads/2023/09/vinyl_spread-1.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/dp/B0C92W29LD?tag=sdepcwde-21&linkCode=ogi&th=1&psc=1" target="_blank">Dire Straits Live 1978 - 1992 LP</a>
-                <div class="price">220 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://static01.galaxus.com/productimages/5/3/0/9/6/9/3/2/6/2/6/1/6/3/8/8/2/1/6/e9b3a391-deba-4043-bcc4-49ae473ffb8e.jpg_2880.avif" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.digitec.ch/en/s1/product/8bitdo-arcade-stick-switch-lite-switch-pc-game-controllers-13747515" target="_blank">
+                
+                    8bitdo Arcade Stick
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                78.60 CHF
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/I/81et3J4z9zL._SY445_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/gp/product/B0877NWJZF/ref=ox_sc_saved_image_7?smid=A30832IF5KZPY9&psc=1" target="_blank">Jaws Blu-ray 4K</a>
-                <div class="price">24 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/71U7So0XPVL._SL1500_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/dp/B0C92W29LD?tag=sdepcwde-21&linkCode=ogi&th=1&psc=1" target="_blank">
+                
+                    Dire Straits Live 1978 - 1992 LP
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                220 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/I/61LScqtldhL._AC_SX679_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/gp/product/B006YYPIUI/ref=ox_sc_saved_image_28?smid=A1JA9WU0P0W558&psc=1" target="_blank">Blackwing Palomino 602 Crayons</a>
-                <div class="price">35 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/81et3J4z9zL._SY445_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/gp/product/B0877NWJZF/ref=ox_sc_saved_image_7?smid=A30832IF5KZPY9&psc=1" target="_blank">
+                
+                    Jaws Blu-ray 4K
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                24 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://www.lego.com/cdn/cs/set/assets/bltf5232acff5ba0c26/10297_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" alt="wishlist-item">
-                <a href="https://www.lego.com/en-ch/product/boutique-hotel-10297" target="_blank">LEGO 10297 Boutique Hotel</a>
-                <div class="price">239 CHF</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/61LScqtldhL._AC_SX679_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/gp/product/B006YYPIUI/ref=ox_sc_saved_image_28?smid=A1JA9WU0P0W558&psc=1" target="_blank">
+                
+                    Blackwing Palomino 602 Crayons
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                35 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://www.wog.ch/nas/cover_large/4a/4k_paprikasteelbook.jpg" alt="wishlist-item">
-                <a href="https://www.wog.ch/index.cfm/details/product/183350-Paprika-Steelbook-Edition-Blu-ray-UHD-2-Discs" target="_blank">Paprika 4K</a>
-                <div class="price">36 CHF</div>
+                <div class="wishlist-image">
+                <img src="https://www.lego.com/cdn/cs/set/assets/bltf5232acff5ba0c26/10297_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.lego.com/en-ch/product/boutique-hotel-10297" target="_blank">
+                
+                    LEGO 10297 Boutique Hotel
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                239 CHF
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://pictures.abebooks.com/isbn/9781873200896-us.jpg" alt="wishlist-item">
-                <a href="https://www.abebooks.com/City-Darkness-Limited-Edition-Life-Kowloon/31292330335/bd" target="_blank">CITY OF DARKNESS – SPECIAL REPRINT</a>
-                <div class="price">~ 160 CHF</div>
+                <div class="wishlist-image">
+                <img src="https://www.wog.ch/nas/cover_large/4a/4k_paprikasteelbook.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.wog.ch/index.cfm/details/product/183350-Paprika-Steelbook-Edition-Blu-ray-UHD-2-Discs" target="_blank">
+                
+                    Paprika 4K
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                36 CHF
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/I/61v0QDTS-kL._SX522_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/Pulp-Fiction-Limited-Collectors-Blu-ray/dp/B0DJDGYFTG?dib=eyJ2IjoiMSJ9.klW5y3HEDcmd7XsJ5SEDjsF3dIxtdAK9F9DnVk-09K-jG4H-CeSBPlOXcvVa7BzhIMirUVtfM90L_viZ6GLyyYeS8tLnSm4nWX4dICrV5ZAnTl50gG28XiIWyUvtdcU1WrtcuAoHHevKzxqu_iNKyy_HFqWlLiYxdnko2L-Iz6EGEeXPYOUjZfeScCFBTYAs6OTdF5RE9LRwK5ITWgS5Ag8eskzKt0ZdLhkH_pjbxXI.R25ziHAmaTXuk5wZzqxoNjqm7stqNzTBEkKJ00SARqo&dib_tag=se&keywords=Pulp+Fiction+30th+Anniversary+Collector%27s+Edition+Amazon+Exclusive+%5B4K+UHD+Blu-Ray+Digital+Copy%5D&linkCode=gg3&linkId=3ddeaf77413169d18b3d6c726143490d&nsdOptOutParam=true&qid=1735808493&sr=8-1&ufe=INHOUSE_INSTALLMENTS%3ADE_IHI_3M_AUTOMATED" target="_blank">Pulp Fiction [4K Ultra HD]</a>
-                <div class="price">45 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://pictures.abebooks.com/isbn/9781873200896-us.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.abebooks.com/City-Darkness-Limited-Edition-Life-Kowloon/31292330335/bd" target="_blank">
+                
+                    CITY OF DARKNESS – SPECIAL REPRINT
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                ~ 160 CHF
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://www.lego.com/cdn/cs/set/assets/bltc38b5911d77d1733/10350_Prod.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1" alt="wishlist-item">
-                <a href="https://www.lego.com/en-ch/product/tudor-corner-10350" target="_blank">LEGO 10350 Tudor Corner</a>
-                <div class="price">239 CHF</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/61v0QDTS-kL._SX522_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/Pulp-Fiction-Limited-Collectors-Blu-ray/dp/B0DJDGYFTG?dib=eyJ2IjoiMSJ9.klW5y3HEDcmd7XsJ5SEDjsF3dIxtdAK9F9DnVk-09K-jG4H-CeSBPlOXcvVa7BzhIMirUVtfM90L_viZ6GLyyYeS8tLnSm4nWX4dICrV5ZAnTl50gG28XiIWyUvtdcU1WrtcuAoHHevKzxqu_iNKyy_HFqWlLiYxdnko2L-Iz6EGEeXPYOUjZfeScCFBTYAs6OTdF5RE9LRwK5ITWgS5Ag8eskzKt0ZdLhkH_pjbxXI.R25ziHAmaTXuk5wZzqxoNjqm7stqNzTBEkKJ00SARqo&dib_tag=se&keywords=Pulp+Fiction+30th+Anniversary+Collector%27s+Edition+Amazon+Exclusive+%5B4K+UHD+Blu-Ray+Digital+Copy%5D&linkCode=gg3&linkId=3ddeaf77413169d18b3d6c726143490d&nsdOptOutParam=true&qid=1735808493&sr=8-1&ufe=INHOUSE_INSTALLMENTS%3ADE_IHI_3M_AUTOMATED" target="_blank">
+                
+                    Pulp Fiction [4K Ultra HD]
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                45 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://s3.amazonaws.com/criterion-production/product_images/1826-74abafd9cdfb81dc87d1738ec3c99693/VZ6wkU3rR5LF2srqIn918sRLIBPOl8_large.jpg" alt="wishlist-item">
-                <a href="https://www.criterion.com/boxsets/1069-the-complete-jacques-tati" target="_blank">The Complete Jacques Tati</a>
-                <div class="price">100 USD</div>
+                <div class="wishlist-image">
+                <img src="https://www.lego.com/cdn/cs/set/assets/bltc38b5911d77d1733/10350_Prod.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.lego.com/en-ch/product/tudor-corner-10350" target="_blank">
+                
+                    LEGO 10350 Tudor Corner
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                239 CHF
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://s3.amazonaws.com/criterion-production/films/96833308352eedd79b50b2de8016a6c5/7IQOqWTrRuJg90rWrJZbK1VXI7aDcR_large.jpg" alt="wishlist-item">
-                <a href="https://www.criterion.com/films/790-the-leopard" target="_blank">The Leopard</a>
-                <div class="price">40 USD</div>
+                <div class="wishlist-image">
+                <img src="https://s3.amazonaws.com/criterion-production/product_images/1826-74abafd9cdfb81dc87d1738ec3c99693/VZ6wkU3rR5LF2srqIn918sRLIBPOl8_large.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.criterion.com/boxsets/1069-the-complete-jacques-tati" target="_blank">
+                
+                    The Complete Jacques Tati
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                100 USD
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/I/710faG4ZPML._AC_SY450_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/Rebellion-Unplugged-Joyride-Survival-Racetracks/dp/B0DK447SQL/ref=sr_1_4?crid=2ZDACXNCRQQAV&dib=eyJ2IjoiMSJ9.9QDGL8mXnxBi6nTWyr4sccLy7IHJvxWJNY5ZXssbbrv1crQfLFeWK-QIK9vWhIVFDa40XUP2l5sBNnUtBDUE9h3YgeqZe0Ez9A4_2XEAz929OPbWgvehprjUB-NqTJqZ3hLitlSm3BL0QC8RDNCQeCl2z8o1iDowAXx615RaJzpT_aj39WD0U_tBU6EVLKp_CjNwitpr_RCP9UudaNFzk1hJOzo6KZHLBaXGBwhPP7Y.sABZkyocjYDgaeEFY0FLYv0VQk5or2C_-cEcr0Stksc&dib_tag=se&keywords=joyride%2Benglish&qid=1739278382&sprefix=joyride%2Benglish%2Caps%2C105&sr=8-4&th=1" target="_blank">Joyride Boardgame</a>
-                <div class="price">65 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://s3.amazonaws.com/criterion-production/films/96833308352eedd79b50b2de8016a6c5/7IQOqWTrRuJg90rWrJZbK1VXI7aDcR_large.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.criterion.com/films/790-the-leopard" target="_blank">
+                
+                    The Leopard
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                40 USD
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/I/91j2tD6pM9L._SX342_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/Wire-komplette-Serie-Blu-ray-Limited/dp/B00VALUTWW?crid=307CDJ3CWAWAP&dib=eyJ2IjoiMSJ9.nCTJC1rZ7ZLHsLy7TCoOEbLxIyRylbNXmdIzJCQJ2UWI2DxoSixVA9JqKMEV6mxz29R-oVBc5l3Q8Xqb-1FQaI7-Hi3akTGw9F6Md-uwl84wzNoq2HeqtRuMBT8sztuHlL4N0YFmzqI7FsqcacHn7hdc6TSsKB64cXQZC_DYV0gx8sDnp9V3v3p31KiZLJAeRZU1x0vrZ1gPdlJQNX49a7UxKrhYcfyg-Rd3LP_ctnk.0h-k3XCVFesH_3Ht1AJJYNCW2zey6N3HiPFJKBFss4w&dib_tag=se&keywords=the+wire&qid=1741357939&sprefix=the+wire%2Caps%2C98&sr=8-1&ufe=app_do%3Aamzn1.fos.1d0000e1-44b8-40d1-a25b-0cacf650cfb8" target="_blank">The Wire Blu-ray</a>
-                <div class="price">71 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/710faG4ZPML._AC_SY450_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/Rebellion-Unplugged-Joyride-Survival-Racetracks/dp/B0DK447SQL/ref=sr_1_4?crid=2ZDACXNCRQQAV&dib=eyJ2IjoiMSJ9.9QDGL8mXnxBi6nTWyr4sccLy7IHJvxWJNY5ZXssbbrv1crQfLFeWK-QIK9vWhIVFDa40XUP2l5sBNnUtBDUE9h3YgeqZe0Ez9A4_2XEAz929OPbWgvehprjUB-NqTJqZ3hLitlSm3BL0QC8RDNCQeCl2z8o1iDowAXx615RaJzpT_aj39WD0U_tBU6EVLKp_CjNwitpr_RCP9UudaNFzk1hJOzo6KZHLBaXGBwhPP7Y.sABZkyocjYDgaeEFY0FLYv0VQk5or2C_-cEcr0Stksc&dib_tag=se&keywords=joyride%2Benglish&qid=1739278382&sprefix=joyride%2Benglish%2Caps%2C105&sr=8-4&th=1" target="_blank">
+                
+                    Joyride Boardgame
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                65 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://m.media-amazon.com/images/P/0593542908.01._SCLZZZZZZZ_SX500_.jpg" alt="wishlist-item">
-                <a href="https://www.amazon.de/-/en/Randall-Munroe/dp/147368062X/ref=sr_1_1?keywords=what+if+2+english&qid=1688464961&sprefix=what+if+2+e%2Caps%2C92&sr=8-1" target="_blank">What If? 2 English Hardcover</a>
-                <div class="price">19.15 EUR</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/I/91j2tD6pM9L._SX342_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/Wire-komplette-Serie-Blu-ray-Limited/dp/B00VALUTWW?crid=307CDJ3CWAWAP&dib=eyJ2IjoiMSJ9.nCTJC1rZ7ZLHsLy7TCoOEbLxIyRylbNXmdIzJCQJ2UWI2DxoSixVA9JqKMEV6mxz29R-oVBc5l3Q8Xqb-1FQaI7-Hi3akTGw9F6Md-uwl84wzNoq2HeqtRuMBT8sztuHlL4N0YFmzqI7FsqcacHn7hdc6TSsKB64cXQZC_DYV0gx8sDnp9V3v3p31KiZLJAeRZU1x0vrZ1gPdlJQNX49a7UxKrhYcfyg-Rd3LP_ctnk.0h-k3XCVFesH_3Ht1AJJYNCW2zey6N3HiPFJKBFss4w&dib_tag=se&keywords=the+wire&qid=1741357939&sprefix=the+wire%2Caps%2C98&sr=8-1&ufe=app_do%3Aamzn1.fos.1d0000e1-44b8-40d1-a25b-0cacf650cfb8" target="_blank">
+                
+                    The Wire Blu-ray
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                71 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://s3.amazonaws.com/criterion-production/films/58af11c9e0933492c227a0f6bc42fcb5/Kknn0rzbae43wtmBwvemdtega0BMS7_large.jpg" alt="wishlist-item">
-                <a href="https://www.criterion.com/films/34685-flow" target="_blank">Flow 4K Blu-Ray</a>
-                <div class="price">40</div>
+                <div class="wishlist-image">
+                <img src="https://m.media-amazon.com/images/P/0593542908.01._SCLZZZZZZZ_SX500_.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.amazon.de/-/en/Randall-Munroe/dp/147368062X/ref=sr_1_1?keywords=what+if+2+english&qid=1688464961&sprefix=what+if+2+e%2Caps%2C92&sr=8-1" target="_blank">
+                
+                    What If? 2 English Hardcover
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                19.15 EUR
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://s3.amazonaws.com/criterion-production/films/14f3b3df50d35f7ec6f84b9eab677a29/bjQNJLLze06EDvfZpwPlGxDfciyqyT_large.jpg" alt="wishlist-item">
-                <a href="https://www.criterion.com/films/317-this-is-spinal-tap" target="_blank">This Is Spinal Tap 4K Blu-Ray</a>
-                <div class="price">40</div>
+                <div class="wishlist-image">
+                <img src="https://s3.amazonaws.com/criterion-production/films/58af11c9e0933492c227a0f6bc42fcb5/Kknn0rzbae43wtmBwvemdtega0BMS7_large.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.criterion.com/films/34685-flow" target="_blank">
+                
+                    Flow 4K Blu-Ray
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                40
+                
+            </div></div>
             <div class="wishlist-item">
-                <img src="https://s3.amazonaws.com/criterion-production/films/096615d592e061235c83a3731ec42883/efn3iNcCcalzGL6WK5O7v6sS52K9QE_large.jpg" alt="wishlist-item">
-                <a href="https://www.criterion.com/films/29368-the-princess-bride" target="_blank">The Princess Bride 4K Blu-Ray</a>
-                <div class="price">40</div>
+                <div class="wishlist-image">
+                <img src="https://s3.amazonaws.com/criterion-production/films/14f3b3df50d35f7ec6f84b9eab677a29/bjQNJLLze06EDvfZpwPlGxDfciyqyT_large.jpg" alt="missing image">
             </div>
-        
+            <div class="wishlist-name">
+                <a href="https://www.criterion.com/films/317-this-is-spinal-tap" target="_blank">
+                
+                    This Is Spinal Tap 4K Blu-Ray
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                40
+                
+            </div></div>
+            <div class="wishlist-item">
+                <div class="wishlist-image">
+                <img src="https://s3.amazonaws.com/criterion-production/films/096615d592e061235c83a3731ec42883/efn3iNcCcalzGL6WK5O7v6sS52K9QE_large.jpg" alt="missing image">
+            </div>
+            <div class="wishlist-name">
+                <a href="https://www.criterion.com/films/29368-the-princess-bride" target="_blank">
+                
+                    The Princess Bride 4K Blu-Ray
+                    
+                </a>
+            </div>
+            <div class="wishlist-price">
+            
+                40
+                
+            </div></div>
         </div>
     </body>
     </html>
-    
